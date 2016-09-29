@@ -4,12 +4,14 @@ set "PATH=%PATH%;%USERPROFILE%\Documents\python;%USERPROFILE%\Documents\python\S
 REM system alias
 doskey clear=cls
 doskey ls=dir $*
+doskey cp=copy $*
+doskey mv=move $*
+doskey rm=del $*
 doskey :q=exit
 doskey :q!=exit
 doskey send=pscp -r $1 $2@$3:$4
 
 REM environment
-doskey cp=copy $*
 doskey p=python $*
 doskey wo=workon $*
 doskey pipt=pip install --trusted-host pypi.python.org  $*
