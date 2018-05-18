@@ -1,20 +1,14 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Android
-export ANDROID_HOME=~/android-studio/android-sdk-linux/
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME='mh'
+ZSH_THEME='amuse'
 
 # This makes repository status check for large repositories much, much faster.
 DISABLE_UNTRACKED_FILES_DIRTY='true'
-
-# Plugins
-plugins=(git python pip django)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,11 +33,17 @@ alias cpp='g++ -std=c++11 -o a'
 # Python
 alias p='python'
 
+# Go
+export GOPATH=~/go/
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
+gocd(){ cd `go list -f '{{.Dir}}' .../$1`}
+
 # Virtual environment
 alias wo='workon'
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/python-projects
-source /usr/bin/virtualenvwrapper.sh
 
 # Django
 alias pm='p manage.py'
@@ -63,6 +63,7 @@ alias gc='g commit -m'
 alias gch='g checkout'
 alias gps='g push origin'
 alias gpl='g pull origin'
+alias gclear='g branch | grep -v "master" | xargs g branch -D '
 
 # Preferred editor for local and remote sessions
 export EDITOR='vi'
@@ -80,7 +81,7 @@ function dclear(){
 	drmi
 }
 
-# redehat distros
+# redhat distros
 function dgroup(){
 	sudo groupadd docker
 	sudo gpasswd -a ${USER} docker
