@@ -1,4 +1,4 @@
-" vim-bootstrap 2021-07-17 13:31:12
+" vim-bootstrap 2021-07-17 14:47:45
 
 "*****************************************************************************
 "" Vim-Plug core
@@ -10,7 +10,7 @@ else
   let curl_exists=expand('curl')
 endif
 
-let g:vim_bootstrap_langs = "c,go,haskell,html,javascript,python,rust,typescript"
+let g:vim_bootstrap_langs = "c,go,haskell,python,rust"
 let g:vim_bootstrap_editor = "vim"				" nvim or vim
 let g:vim_bootstrap_theme = "molokai"
 let g:vim_bootstrap_frams = ""
@@ -93,19 +93,6 @@ Plug 'dag/vim2hs'
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
 
-" html
-"" HTML Bundle
-Plug 'hail2u/vim-css3-syntax'
-Plug 'gko/vim-coloresque'
-Plug 'tpope/vim-haml'
-Plug 'mattn/emmet-vim'
-
-
-" javascript
-"" Javascript Bundle
-Plug 'jelera/vim-javascript-syntax'
-
-
 " python
 "" Python Bundle
 Plug 'davidhalter/jedi-vim'
@@ -130,11 +117,6 @@ Plug 'prabirshrestha/asyncomplete.vim'
 
 " Asyncomplete lsp.vim
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
-
-
-" typescript
-Plug 'leafgarland/typescript-vim'
-Plug 'HerringtonDarkholme/yats.vim'
 
 
 "*****************************************************************************
@@ -571,21 +553,6 @@ let g:necoghc_enable_detailed_browse = 1
 autocmd Filetype haskell setlocal omnifunc=necoghc#omnifunc
 
 
-" html
-" for html files, 2 spaces
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-
-
-" javascript
-let g:javascript_enable_domhtmlcss = 1
-
-" vim-javascript
-augroup vimrc-javascript
-  autocmd!
-  autocmd FileType javascript setl tabstop=4|setl shiftwidth=4|setl expandtab softtabstop=4
-augroup END
-
-
 " python
 " vim-python
 augroup vimrc-python
@@ -623,10 +590,6 @@ au FileType rust nmap gd <Plug>(rust-def)
 au FileType rust nmap gs <Plug>(rust-def-split)
 au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
-
-
-" typescript
-let g:yats_host_keyword = 1
 
 
 

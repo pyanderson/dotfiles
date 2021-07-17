@@ -3,3 +3,5 @@ augroup vimrc-javascript
   autocmd!
   autocmd FileType javascript setl tabstop=2|setl shiftwidth=2|setl expandtab softtabstop=2
 augroup END
+
+let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-html', 'coc-css']
