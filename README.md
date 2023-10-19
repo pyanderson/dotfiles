@@ -5,3 +5,6 @@
 - [tmux-powerline](https://github.com/erikw/tmux-powerline)
 - [Oh My tmux](https://github.com/gpakosz/.tmux)
 - [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
+- [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
+- [fzf](https://github.com/junegunn/fzf)
+- [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
