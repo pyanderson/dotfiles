@@ -8,3 +8,7 @@
 - [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
 - [fzf](https://github.com/junegunn/fzf)
 - [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [coc.nvim](https://github.com/neoclide/coc.nvim)
+- [coc-tsserver](https://github.com/neoclide/coc-tsserver)
+- [coc-json](https://github.com/neoclide/coc-json)
