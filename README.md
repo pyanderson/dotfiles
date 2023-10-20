@@ -9,6 +9,12 @@
 - [fzf](https://github.com/junegunn/fzf)
 - [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [Vim Bootstrap](https://vim-bootstrap.com/)
+
+```bash
+curl -X POST -d "theme=onedark" -d "editor=nvim" -O https://vim-bootstrap.com/generate.vim
+```
+
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
 - [coc-tsserver](https://github.com/neoclide/coc-tsserver)
 - [coc-json](https://github.com/neoclide/coc-json)
