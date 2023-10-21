@@ -1,5 +1,13 @@
 let g:python3_host_prog = '$HOME/.virtualenvs/pynvim/bin/python'
 
+" Ale config
+:call extend(g:ale_linters, {
+    \'python': ['flake8', 'mypy'], })
+
+let g:ale_fixers = {}
+let g:ale_fixers.python = ['isort', 'black']
+let g:ale_fix_on_save = 1
+
 " https://vim.fandom.com/wiki/Go_away_and_come_back
 
 function! MakeSession()
