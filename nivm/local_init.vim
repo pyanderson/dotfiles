@@ -195,5 +195,5 @@ nnoremap <silent> <Leader>F :Files<CR>
 " https://vi.stackexchange.com/a/18566
 command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
 
-" js and ts config
-autocmd FileType javascript,typescript set tabstop=2|set shiftwidth=2|set expandtab
+" js, ts, and json tabstop
+autocmd FileType javascript,typescript,json set tabstop=2|set shiftwidth=2|set expandtab

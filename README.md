@@ -16,6 +16,8 @@ curl -X POST -d "theme=onedark" -d "editor=nvim" -O https://vim-bootstrap.com/ge
 ```
 
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
-- [coc-tsserver](https://github.com/neoclide/coc-tsserver)
 - [coc-json](https://github.com/neoclide/coc-json)
-- [coc-jedi](https://github.com/pappasam/coc-jedi)
+- [coc-tsserver](https://github.com/neoclide/coc-tsserver)
+- [coc-eslint](https://github.com/neoclide/coc-eslint)
+- [coc-pyright](https://github.com/fannheyward/coc-pyright)
+- [coc-htmldjango](https://github.com/yaegassy/coc-htmldjango)
