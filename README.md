@@ -21,3 +21,4 @@ curl -X POST -d "theme=onedark" -d "editor=nvim" -O https://vim-bootstrap.com/ge
 - [coc-eslint](https://github.com/neoclide/coc-eslint)
 - [coc-pyright](https://github.com/fannheyward/coc-pyright)
 - [coc-htmldjango](https://github.com/yaegassy/coc-htmldjango)
+- [coc-markdownlint](https://github.com/fannheyward/coc-markdownlint)
