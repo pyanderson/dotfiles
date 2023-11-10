@@ -197,3 +197,10 @@ command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-hea
 
 " js, ts, and json tabstop
 autocmd FileType javascript,typescript,json set tabstop=2|set shiftwidth=2|set expandtab
+
+" split buffers
+set splitright
+set splitbelow
+
+" coc-prettier
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
